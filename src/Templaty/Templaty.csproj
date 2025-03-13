@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Title>Templaty</Title>
+        <Authors>Potapov Danila Anatolevich</Authors>
+        <Description>Library for fast templates creation</Description>
+        <Copyright>© Потапов Д. А., 2023</Copyright>
+        <NoWarn>1591</NoWarn>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Scriban" Version="5.9.0"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Templaty.Abstractions\Templaty.Abstractions.csproj" />
+    </ItemGroup>
+
+</Project>

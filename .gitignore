@@ -1,0 +1,12 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+.vs
+Templaty.sln.DotSettings.user
+desktop.ini
+.idea
+scripts/db-scripts/dumps
+infra/.docker
+docs/.obsidian
