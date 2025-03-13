@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templaty", "src\Templaty\Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templaty.Abstractions", "src\Templaty.Abstractions\Templaty.Abstractions.csproj", "{8C251311-1A0A-4182-8742-9071DB81A85A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templaty.Simple", "src\Templaty.Simple\Templaty.Simple.csproj", "{39924996-2195-4F66-A3FE-07E344D86403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templaty.Tests", "src\Templaty.Tests\Templaty.Tests.csproj", "{2E1A7D0D-F5DD-4845-9FB0-BCE10664D15B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,7 +24,16 @@ Global
 		{8C251311-1A0A-4182-8742-9071DB81A85A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C251311-1A0A-4182-8742-9071DB81A85A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C251311-1A0A-4182-8742-9071DB81A85A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39924996-2195-4F66-A3FE-07E344D86403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39924996-2195-4F66-A3FE-07E344D86403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39924996-2195-4F66-A3FE-07E344D86403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39924996-2195-4F66-A3FE-07E344D86403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E1A7D0D-F5DD-4845-9FB0-BCE10664D15B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E1A7D0D-F5DD-4845-9FB0-BCE10664D15B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E1A7D0D-F5DD-4845-9FB0-BCE10664D15B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E1A7D0D-F5DD-4845-9FB0-BCE10664D15B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{39924996-2195-4F66-A3FE-07E344D86403} = {D3EC3589-589C-498D-88EB-9F771CA5C115}
 	EndGlobalSection
 EndGlobal

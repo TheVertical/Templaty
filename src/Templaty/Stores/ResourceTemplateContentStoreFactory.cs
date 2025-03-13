@@ -9,8 +9,5 @@ internal sealed class ResourceTemplateContentStoreFactory(params Assembly[] asse
 
     public string Name => "default";
 
-    public ITemplateContentStore Create()
-    {
-        return new ResourceTemplateContentStore(assemblies);
-    }
+    public ITemplateContentStore Create() => new ResourceTemplateContentStore(assemblies);
 }

@@ -5,7 +5,7 @@ namespace Templaty.DependencyInjections;
 
 public static class TemplateFeatureServiceCollectionExtension
 {
-    public static IServiceCollection AddTemplates(this IServiceCollection serviceCollection, Action<ITemplatesConfigurator>? configureAction = null)
+    public static IServiceCollection UseTemplaty(this IServiceCollection serviceCollection, Action<ITemplatesConfigurator>? configureAction = null)
     {
         // Templaty services register
         serviceCollection.AddScoped<ITemplateBuilder, TemplateBuilder>();

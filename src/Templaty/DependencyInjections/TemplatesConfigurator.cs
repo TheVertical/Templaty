@@ -5,7 +5,7 @@ using Templaty.Stores;
 
 namespace Templaty.DependencyInjections;
 
-internal sealed class TemplatesConfigurator : ITemplatesConfigurator
+public sealed class TemplatesConfigurator : ITemplatesConfigurator
 {
     private readonly List<Assembly> _resourceAssemblies = new();
     private readonly List<Func<IServiceProvider, ITemplateContentStoreFactory>> _factoryImplementationFuncs = new();
