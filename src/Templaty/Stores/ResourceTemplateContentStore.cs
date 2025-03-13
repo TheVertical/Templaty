@@ -6,7 +6,7 @@ namespace Templaty.Stores;
 
 internal sealed class ResourceTemplateContentStore : ITemplateContentStore
 {
-    private readonly IReadOnlyDictionary<string, Assembly> _resourceNameToAssemblyMapping;
+    private readonly Dictionary<string, Assembly> _resourceNameToAssemblyMapping;
 
     public ResourceTemplateContentStore(params Assembly[] resourceAssemblyDescriptors)
     {
