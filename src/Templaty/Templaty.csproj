@@ -9,6 +9,8 @@
         <Description>Library for fast templates creation</Description>
         <Copyright>© Потапов Д. А., 2023</Copyright>
         <NoWarn>1591</NoWarn>
+        <PackageIcon>Templaty.300x300.ico</PackageIcon>
+        <PackageTags>template, templates</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
@@ -22,6 +24,13 @@
 
     <ItemGroup>
         <InternalsVisibleTo Include="Templaty.Tests"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Templaty.300x300.ico">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
     </ItemGroup>
 
 </Project>

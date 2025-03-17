@@ -43,6 +43,12 @@ public static class Template
         /// <summary>
         /// stores arround embedded resources
         /// </summary>
-        Resources = 2
+        Resources = 2,
+
+        /// <summary>
+        /// stores by not defined method
+        /// </summary>
+        /// <remarks>use it for custom stores</remarks>
+        NotDefined = 3
     }
 }

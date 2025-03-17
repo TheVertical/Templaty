@@ -1,5 +1,6 @@
 bin/
 obj/
+.obsidian/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/

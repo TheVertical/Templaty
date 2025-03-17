@@ -25,7 +25,9 @@ builder.Services.AddRequestLocalization(
 );
 builder.Services.AddSingleton<ITemplateContentStoreFactory, LocalizableResourceStoreFactory>();
 
-builder.Services.UseTemplaty(configator => configator.AddResourceStoreAssembly(typeof(Program).Assembly));
+builder.Services.UseTemplaty(
+    configator => configator.AddResourceStoreAssembly(typeof(Program).Assembly).AddStore(x => x.GetRequiredService<LocalizableResourceStoreFactory>())
+);
 
 builder.Services.AddMvc();
 
