@@ -10,10 +10,12 @@
         <Copyright>© Potapov D. А., 2025</Copyright>
         <NoWarn>1591</NoWarn>
         <PackageIcon>Templaty.300x300.png</PackageIcon>
-        <PackageTags>template, templates</PackageTags>
+        <PackageTags>template, templates, scriban</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/TheVertical/Templaty</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/TheVertical/Templaty</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
