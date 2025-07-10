@@ -7,10 +7,13 @@
         <Title>Templaty</Title>
         <Authors>Potapov Danila Anatolevich</Authors>
         <Description>Library for fast templates creation</Description>
-        <Copyright>© Потапов Д. А., 2023</Copyright>
+        <Copyright>© Potapov D. А., 2025</Copyright>
         <NoWarn>1591</NoWarn>
-        <PackageIcon>Templaty.300x300.ico</PackageIcon>
+        <PackageIcon>Templaty.300x300.png</PackageIcon>
         <PackageTags>template, templates</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
     </PropertyGroup>
 
     <ItemGroup>
@@ -31,6 +34,13 @@
         <Pack>True</Pack>
         <PackagePath></PackagePath>
       </None>
+
+      <None Update="Templaty.300x300.png">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+
+      <None Include="docs\README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
 </Project>
