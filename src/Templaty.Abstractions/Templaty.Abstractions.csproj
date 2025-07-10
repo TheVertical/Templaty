@@ -1,9 +1,37 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Title>Templaty - Abstractions</Title>
+        <Authors>Potapov Danila Anatolevich</Authors>
+        <Description>Library for fast templates creation</Description>
+        <Copyright>© Potapov D. А., 2025</Copyright>
+        <NoWarn>1591</NoWarn>
+        <PackageIcon>Templaty.300x300.png</PackageIcon>
+        <PackageTags>template, templates, scriban</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/TheVertical/Templaty</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/TheVertical/Templaty</RepositoryUrl>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+        <TargetFramework>net8.0</TargetFramework>
+        <Version>1.0.1</Version>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Update="Templaty.300x300.png">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+
+      <None Include="docs\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Services\Filling\" />
+    </ItemGroup>
 
 </Project>

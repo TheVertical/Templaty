@@ -10,6 +10,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templaty.Simple", "src\Temp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templaty.Tests", "src\Templaty.Tests\Templaty.Tests.csproj", "{2E1A7D0D-F5DD-4845-9FB0-BCE10664D15B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templaty.Postgres", "src\Stores\Templaty.Postgres\Templaty.Postgres.csproj", "{F120D398-56B2-46DF-B443-6376EB3588FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Stores", "1 - Stores", "{D1A2A5E0-AC78-4D0A-A2CA-D19ACE668B81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Templaty.PostgresStoreSample", "src\Templaty.PostgresStoreSample\Templaty.PostgresStoreSample.csproj", "{10B83CB4-0BB1-42CF-90AA-2D629806B763}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,8 +36,17 @@ Global
 		{2E1A7D0D-F5DD-4845-9FB0-BCE10664D15B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2E1A7D0D-F5DD-4845-9FB0-BCE10664D15B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E1A7D0D-F5DD-4845-9FB0-BCE10664D15B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F120D398-56B2-46DF-B443-6376EB3588FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F120D398-56B2-46DF-B443-6376EB3588FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F120D398-56B2-46DF-B443-6376EB3588FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F120D398-56B2-46DF-B443-6376EB3588FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10B83CB4-0BB1-42CF-90AA-2D629806B763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10B83CB4-0BB1-42CF-90AA-2D629806B763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10B83CB4-0BB1-42CF-90AA-2D629806B763}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{39924996-2195-4F66-A3FE-07E344D86403} = {D3EC3589-589C-498D-88EB-9F771CA5C115}
+		{F120D398-56B2-46DF-B443-6376EB3588FC} = {D1A2A5E0-AC78-4D0A-A2CA-D19ACE668B81}
+		{10B83CB4-0BB1-42CF-90AA-2D629806B763} = {D3EC3589-589C-498D-88EB-9F771CA5C115}
 	EndGlobalSection
 EndGlobal

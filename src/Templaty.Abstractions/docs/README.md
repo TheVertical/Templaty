@@ -1,4 +1,4 @@
-# Templaty - .net library for templating
+﻿# Templaty - .net library for templating
 
 # 1. Introduction
 

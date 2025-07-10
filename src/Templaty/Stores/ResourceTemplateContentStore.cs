@@ -15,6 +15,7 @@ internal sealed class ResourceTemplateContentStore : ITemplateContentStore
             .ToDictionary(x => x.ResourceName, x => x.Assembly);
     }
 
+    
     /// <inheritdoc />
     public Template.StoreType Type => Template.StoreType.Resources;
 
