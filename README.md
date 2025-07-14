@@ -1,5 +1,7 @@
 # Templaty - .net library for templating
 
+![Support Chat](https://t.me/+cQcnlbgb7KxkYzky)
+
 # 1. Introduction
 
 **Templaty** is a lightweight .net library based on [Scriban library](https://github.com/scriban/scriban) providing
