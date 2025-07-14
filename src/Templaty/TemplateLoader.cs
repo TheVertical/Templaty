@@ -10,13 +10,12 @@ internal sealed class TemplateLoader : ITemplateLoader
 
     private sealed record TemplateTypeDescriptor(string Path, Template.StoreType StoreType, string StoreName);
 
-    private readonly IReadOnlyDictionary<StoreDescriptor, ITemplateContentStoreFactory> _contentStoreFactories;
-    private readonly ConcurrentDictionary<Type, TemplateTypeDescriptor> _templatePathCache;
+    private readonly Dictionary<StoreDescriptor, ITemplateContentStoreFactory> _contentStoreFactories;
+    private static readonly ConcurrentDictionary<Type, TemplateTypeDescriptor> _templatePathCache = new();
 
     public TemplateLoader(IEnumerable<ITemplateContentStoreFactory> contentStoreFactories)
     {
         _contentStoreFactories = contentStoreFactories.ToDictionary(x => new StoreDescriptor(x.Type, x.Name));
-        _templatePathCache = new ConcurrentDictionary<Type, TemplateTypeDescriptor>();
     }
 
     /// <inheritdoc />

@@ -49,6 +49,11 @@ public static class Template
         /// stores by not defined method
         /// </summary>
         /// <remarks>use it for custom stores</remarks>
-        NotDefined = 3
+        NotDefined = 3,
+     
+        /// <summary>
+        /// stores arround postgres db
+        /// </summary>
+        Postgres = 4,
     }
 }

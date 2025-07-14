@@ -12,10 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Templaty\Templaty.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Compile Update="Resources\Templates.ru.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
@@ -35,6 +31,10 @@
       </EmbeddedResource>
       <None Remove="Wheater\Notifications\WheaterDistribution.txt" />
       <EmbeddedResource Include="Wheater\Notifications\WheaterDistribution.txt" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Templaty\Templaty.csproj" />
     </ItemGroup>
 
 </Project>

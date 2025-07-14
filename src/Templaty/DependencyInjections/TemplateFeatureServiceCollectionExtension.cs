@@ -9,7 +9,7 @@ public static class TemplateFeatureServiceCollectionExtension
     {
         // Templaty services register
         serviceCollection.AddScoped<ITemplateBuilder, TemplateBuilder>();
-        serviceCollection.AddSingleton<ITemplateLoader, TemplateLoader>();
+        serviceCollection.AddScoped<ITemplateLoader, TemplateLoader>();
 
         var configurator = new TemplatesConfigurator();
 

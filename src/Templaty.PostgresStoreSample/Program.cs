@@ -1,7 +1,8 @@
 using System.Globalization;
-using Templaty.Abstractions;
+using Microsoft.EntityFrameworkCore;
 using Templaty.DependencyInjections;
-using Templaty.Simple.Resources;
+using Templaty.Postgres.DependencyInjections;
+using Templaty.PostgresStoreSample.Persistence;
 
 var currentCulture = new CultureInfo("ru-RU");
 CultureInfo.CurrentCulture = currentCulture;
@@ -14,21 +15,19 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// add localizations and store for it
-builder.Services.AddLocalization();
-builder.Services.AddRequestLocalization(
-    options =>
+builder.Services.AddDbContext<AppDbContext>(
+    (provider, optionsBuilder) =>
     {
-        options.SupportedCultures = new List<CultureInfo> {new("en"), new("ru")};
-        options.SetDefaultCulture("ru");
+        optionsBuilder.UseNpgsql(builder.Configuration.GetConnectionString("Templaty"));
+
+        var logger = provider.GetRequiredService<ILogger<DbContext>>();
+        optionsBuilder.LogTo(message => logger.LogInformation(message), LogLevel.Information);
+        optionsBuilder.EnableSensitiveDataLogging();
     }
 );
-builder.Services.AddScoped<LocalizableResourceStoreFactory>();
 
-builder.Services.UseTemplaty(
-    configator => configator.AddResourceStoreAssembly(typeof(Program).Assembly)
-        .AddStore(x => x.GetRequiredService<LocalizableResourceStoreFactory>())
-);
+builder.Services.UseTemplaty(configator => configator.AddResourceStoreAssembly(typeof(Program).Assembly));
+builder.Services.AddTemplatyPostgresStore<AppDbContext>();
 
 builder.Services.AddMvc();
 

@@ -6,40 +6,34 @@
         <Nullable>enable</Nullable>
         <Title>Templaty</Title>
         <Authors>Potapov Danila Anatolevich</Authors>
-        <Description>Library for fast templates creation</Description>
+        <Description>Library with Postgres store for Templaty</Description>
         <Copyright>© Potapov D. А., 2025</Copyright>
         <NoWarn>1591</NoWarn>
         <PackageIcon>Templaty.300x300.png</PackageIcon>
-        <PackageTags>template, templates, scriban</PackageTags>
+        <PackageTags>template, templates, scriban, postgres</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/TheVertical/Templaty</PackageProjectUrl>
         <RepositoryUrl>https://github.com/TheVertical/Templaty</RepositoryUrl>
-        <Version>1.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Scriban" Version="5.9.0"/>
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.18" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.11" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Templaty.Abstractions\Templaty.Abstractions.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <InternalsVisibleTo Include="Templaty.Tests"/>
-    </ItemGroup>
-
-    <ItemGroup>
-
       <None Update="Templaty.300x300.png">
         <Pack>True</Pack>
         <PackagePath></PackagePath>
       </None>
 
       <None Include="docs\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Templaty\Templaty.csproj" />
     </ItemGroup>
 
 </Project>
