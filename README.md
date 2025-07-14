@@ -1,6 +1,6 @@
 # Templaty - .net library for templating
 
-![Support Chat](https://t.me/+cQcnlbgb7KxkYzky)
+![Static Badge](https://img.shields.io/badge/Telegram-blue?link=https%3A%2F%2Ft.me%2F%2BcQcnlbgb7KxkYzky)
 
 # 1. Introduction
 
