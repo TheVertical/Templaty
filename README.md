@@ -1,7 +1,8 @@
 # Templaty - .net library for templating
 
-![Static Badge](https://img.shields.io/badge/Templaty_Nuget_Package-v1.0.0-orange?link=https%3A%2F%2Fwww.nuget.org%2Fpackages%2FTemplaty)
-![Static Badge](https://img.shields.io/badge/Support_Chat-Telegram-blue?link=https%3A%2F%2Ft.me%2F%2BcQcnlbgb7KxkYzky)
+
+Block force pushes
+Prevent users with push access from force pushing to refs.
 
 # 1. Introduction
 
