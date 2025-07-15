@@ -1,7 +1,5 @@
 # Templaty - .net library for templating
 
-
-![Static Badge](https://img.shields.io/badge/Templaty_Nuget_Package-v1.0.0-orange?link=https%3A%2F%2Fwww.nuget.org%2Fpackages%2FTemplaty)
 ![NuGet Version](https://img.shields.io/nuget/v/Templaty?label=Templaty)
 ![Static Badge](https://img.shields.io/badge/Support_Chat-Telegram-blue?link=https%3A%2F%2Ft.me%2F%2BcQcnlbgb7KxkYzky)
 ![NuGet Downloads](https://img.shields.io/nuget/dt/Templaty?label=Package%20Downloads)
