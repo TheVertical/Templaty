@@ -1,8 +1,8 @@
 # Templaty - .net library for templating
 
-![NuGet Version](https://img.shields.io/nuget/v/Templaty?label=Templaty&link=https%3A%2F%2Fwww.nuget.org%2Fpackages%2FTemplaty%2F)
-![Static Badge](https://img.shields.io/badge/Support_Chat-Telegram-blue?link=https%3A%2F%2Ft.me%2F%2BcQcnlbgb7KxkYzky)
-![NuGet Downloads](https://img.shields.io/nuget/dt/Templaty?label=Package%20Downloads)
+[![NuGet Version](https://img.shields.io/nuget/v/Templaty?label=Templaty&link=https%3A%2F%2Fwww.nuget.org%2Fpackages%2FTemplaty%2F)](https://www.nuget.org/packages/Templaty/)
+[![Telegram Chat](https://img.shields.io/badge/Support_Chat-Telegram-blue?link=https%3A%2F%2Ft.me%2F%2BcQcnlbgb7KxkYzky)](https://t.me/TheTemplaty)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Templaty?label=Package%20Downloads)](https://www.nuget.org/packages/Templaty/)
 
 # 1. Introduction
 
